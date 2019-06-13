@@ -35,6 +35,36 @@
   <dependencies>
     <dependency>
       <groupId>io.thorntail</groupId>
+      <artifactId>camel-undertow</artifactId>
+      <version>2.2.0.Final</version>
+    </dependency>
+    <dependency>
+      <groupId>io.thorntail</groupId>
+      <artifactId>camel-servlet</artifactId>
+      <version>2.2.0.Final</version>
+    </dependency>
+    <dependency>
+      <groupId>io.thorntail</groupId>
+      <artifactId>camel-jackson</artifactId>
+      <version>2.2.0.Final</version>
+    </dependency>
+    <dependency>
+      <groupId>io.thorntail</groupId>
+      <artifactId>camel-core</artifactId>
+      <version>2.2.0.Final</version>
+    </dependency>
+    <dependency>
+      <groupId>io.thorntail</groupId>
+      <artifactId>camel-cdi</artifactId>
+      <version>2.2.0.Final</version>
+    </dependency>
+    <dependency>
+      <groupId>io.thorntail</groupId>
+      <artifactId>camel-http4</artifactId>
+      <version>2.2.0.Final</version>
+    </dependency>
+    <dependency>
+      <groupId>io.thorntail</groupId>
       <artifactId>cdi</artifactId>
     </dependency>
     <dependency>

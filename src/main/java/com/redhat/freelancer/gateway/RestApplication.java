@@ -1,4 +1,4 @@
-package com.redhat.coolstore.store;
+package com.redhat.freelancer.gateway;
 
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
