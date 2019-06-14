@@ -1,0 +1,16 @@
+[
+  {
+    "freelancerId": "333333",
+    "firstName": "firstName1",
+    "lastName": "lastName1",
+    "emailAddress": "emailAddress1",
+    "skillList": "skillList1"
+  },
+  {
+    "freelancerId": "333334",
+    "firstName": "firstName2",
+    "lastName": "lastName2",
+    "emailAddress": "emailAddress2",
+    "skillList": "skillList2"
+  }
+]

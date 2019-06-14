@@ -1,6 +1,7 @@
 package com.redhat.freelancer.gateway.rest;
 
 import javax.enterprise.context.ApplicationScoped;
+import javax.inject.Inject;
 import javax.ws.rs.core.MediaType;
 
 import com.redhat.freelancer.gateway.model.Project;
@@ -11,15 +12,17 @@ import org.apache.camel.component.http4.HttpMethods;
 import org.apache.camel.model.dataformat.JsonLibrary;
 import org.apache.camel.model.rest.RestBindingMode;
 import org.apache.camel.model.rest.RestParamType;
+import org.wildfly.swarm.spi.runtime.annotations.ConfigurationValue;
 
 @ApplicationScoped
 @ContextName("rest-context")
 public class ProjectResource extends RouteBuilder {
+    @Inject
+    @ConfigurationValue("projects.service.url")
+    private String projectUrl;
 
     @Override
     public void configure() {
-        String projectUrl = "http://project-service-tosuzuki-freelancer.apps.na311.openshift.opentlc.com";
-
         restConfiguration()
                 .component("undertow")
                 .bindingMode(RestBindingMode.json)

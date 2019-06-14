@@ -8,17 +8,21 @@ import org.apache.camel.component.http4.HttpMethods;
 import org.apache.camel.model.dataformat.JsonLibrary;
 import org.apache.camel.model.rest.RestBindingMode;
 import org.apache.camel.model.rest.RestParamType;
+import org.wildfly.swarm.spi.runtime.annotations.ConfigurationValue;
 
 import javax.enterprise.context.ApplicationScoped;
+import javax.inject.Inject;
 import javax.ws.rs.core.MediaType;
 
 @ApplicationScoped
 @ContextName("rest-context")
 public class FreelancerResource extends RouteBuilder {
+    @Inject
+    @ConfigurationValue("freelancer.service.url")
+    private String freelancerUrl;
+
     @Override
     public void configure() {
-        String freelancerUrl = "http://freelancer-service-tosuzuki-freelancer.apps.na311.openshift.opentlc.com";
-
         restConfiguration()
                 .component("undertow")
                 .bindingMode(RestBindingMode.json)

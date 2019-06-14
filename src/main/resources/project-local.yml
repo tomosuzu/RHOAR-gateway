@@ -1,3 +1,9 @@
 swarm:
   http:
     port: 18080
+projects:
+  service:
+    url: http://localhost:18081
+freelancer:
+  service:
+    url: http://localhost:18081

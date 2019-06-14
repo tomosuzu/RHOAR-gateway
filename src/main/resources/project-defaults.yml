@@ -1,0 +1,6 @@
+projects:
+  service:
+    url: http://project-service-tosuzuki-freelancer.apps.na311.openshift.opentlc.com
+freelancer:
+  service:
+    url: http://freelancer-service-tosuzuki-freelancer.apps.na311.openshift.opentlc.com
